@@ -32,6 +32,6 @@ def main():
 		cluster.fillInContent(message["identifier"], info["headline"], "<br/>".join(description))
 		
 		cluster.saveMeta(os.path.join(outMeta, message["identifier"] + ".json"))
-		cluster.saveContent(os.path.join(outMeta, message["identifier"] + ".json"))
+		cluster.saveContent(os.path.join(outContent, message["identifier"] + ".json"))
 if __name__ == "__main__":
 	main()

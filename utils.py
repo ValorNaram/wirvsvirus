@@ -33,9 +33,9 @@ class dataClustering():
 		self.contentTemplate["content"] = content
 	def saveMeta(self, path):
 		sfile = open(path, "w")
-		sfile.write(json.dumps(self.metaTemplate))
+		sfile.write(json.dumps(self.metaTemplate, ensure_ascii=False))
 		sfile.close()
 	def saveContent(self, path):
 		sfile = open(path, "w")
-		sfile.write(json.dumps(self.contentTemplate))
+		sfile.write(json.dumps(self.contentTemplate, ensure_ascii=False))
 		sfile.close()
